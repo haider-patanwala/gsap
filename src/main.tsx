@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./Layout"
 import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
-import Test from "./pages/Test"
+import GSAP from "./components/GSAP"
 
 export default function App() {
   return (
@@ -20,8 +20,8 @@ export default function App() {
             element={<Home />}
           />
           <Route
-            path="test"
-            element={<Test />}
+            path="/gsap/:gsapcomponent"
+            element={<GSAP />}
           />
           <Route
             path="*"

@@ -4,7 +4,11 @@
 
 @layer base {
   body {
-    @apply flexColCenter min-h-screen w-full bg-stone-50 font-sans text-base text-stone-900;
+    @apply flexColCenter min-h-screen w-full flex-wrap bg-stone-900 font-sans text-base text-stone-50;
+  }
+  p,
+  div {
+    @apply text-stone-100;
   }
 }
 

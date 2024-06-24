@@ -23,12 +23,38 @@ const Home: React.FC<HomeProps> = () => {
         yoyo: true,
       }
     )
+    gsap.fromTo(
+      "#heading",
+      {
+        opacity: 0,
+        y: 20,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power1.inOut",
+        stagger: 0.5,
+      }
+    )
   }, [])
   return (
-    <div className="flexCenter my-auto h-[80dvh] w-full">
+    <div className="flexCenter my-auto h-[80dvh] w-full flex-col">
+      <h1
+        id="heading"
+        className="mb-5 text-2xl font-bold"
+      >
+        Create animations with
+      </h1>
+      <h1
+        id="heading"
+        className="mb-32 text-8xl font-bold"
+      >
+        GSAP!
+      </h1>
       <div
         id="purple-box"
-        className="flex size-32 rounded-3xl bg-purple-900"
+        className="flex size-32 rounded-3xl bg-green-900"
       />
     </div>
   )
